@@ -1,0 +1,57 @@
+section:
+  name: About
+  id: about
+  enable: true
+  weight: 1 
+  showOnNavbar: true
+  template: sections/about.html
+  
+designation: Lead Software Engineer
+
+company:
+  name: Hephaestus Robotics.
+  url: "https://www.frc6390.ca"
+  
+summary: 'Accomplished team lead robotics software
+engineer, passionate about mechatronics and
+technology. Adept in various languages, systems,
+and cutting-edge technology.'
+
+socialLinks:
+- name: Email
+  icon: "fas fa-envelope"
+  url: "mathias@pepservices.com"
+
+- name: Github
+  icon: "fab fa-github"
+  url: "https://www.github.com/soz0"
+
+- name: LinkedIn
+  icon: "fab fa-linkedin"
+  url: "https://www.linkedin.com/in/mathiasdp/"
+
+- name: Twitter
+  icon: "fab fa-twitter"
+  url: "https://twitter.com/ThatSoZo"
+  
+resume: "files/Resume 2023.pdf"
+
+# Show your badges
+# You can show your verifiable certificates from https://www.credly.com.
+# You can also show a circular bar indicating the level of expertise on a certain skill
+badges:
+
+- type: soft-skill-indicator
+  name: Leadership
+  percentage: 95
+  color: blue
+
+- type: soft-skill-indicator
+  name: Team Work
+  percentage: 95
+  color: yellow
+
+- type: soft-skill-indicator
+  name: Hard Working
+  percentage: 100
+  color: orange

@@ -1,22 +1,50 @@
-module:
-  mounts:
-  - source: content
-    target: content
-  - source: static
-    target: static
-  - source: layouts
-    target: layouts
-  - source: data
-    target: data
-  - source: assets
-    target: assets
-  - source: i18n
-    target: i18n
-  - source: archetypes
-    target: archetypes
-  - source: ../../node_modules/flag-icon-css/flags
-    target: static/flags
-  - source: ../../node_modules/@fontsource/mulish/files
-    target: static/files
-  - source: ../../node_modules/katex/dist/fonts
-    target: static/fonts
+baseURL: https://sozo.dev
+
+languageCode: en-us
+title: "Mathias Petersen"
+
+languages:
+  en:
+    languageName: English
+    weight: 1
+
+markup:
+  tableOfContents:
+    startLevel: 2
+    endLevel: 6
+    ordered: false
+
+outputs:
+  home:
+  - HTML
+  - RSS
+  - JSON
+
+
+
+enableEmoji: true
+
+markup:
+  tableOfContents:
+    startLevel: 2
+    endLevel: 6
+    ordered: false
+
+# Site parameters
+params:
+  darkMode:
+    enable: true
+    provider: darkreader
+    default: system
+
+  background: images/background.png
+  
+  logo:
+    main: images/site-icon.png
+    inverted: images/site-icon.png
+    favicon: images/site-favicon.png
+    
+  enableBlogPost: true
+  enableTOC: true
+  newsletter:
+    enable: false

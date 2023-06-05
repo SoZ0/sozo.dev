@@ -1,6 +1,6 @@
 ---
-hero: /images/background/sunrise.jpg
-author:
-    name: Md. Emruz Hossain
-    image: /images/profile-image.jpg
+title: "{{ replace .Name "-" " " | title }}"
+date: {{ .Date }}
+draft: true
 ---
+

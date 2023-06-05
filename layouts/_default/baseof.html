@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<html lang="{{ .Site.Language.Lang }}">
+<html>
   <head>
     <title>{{ .Page.Title }}</title>
     <!------ ADD COMMON HEADERS -------->
     {{- partial "header.html" . -}}
     {{ template "_internal/opengraph.html" . }}
-    {{ template "_internal/twitter_cards.html" . }}
+
     <!------ ADD PAGE SPECIFIC HEADERS ------->
     {{ block "header" . }} {{ end }}
 
@@ -14,7 +14,7 @@
 
   </head>
 
-  <body class="type-{{ .Page.Type }} kind-{{ .Page.Kind }}" data-spy="scroll" data-target="#TableOfContents" data-offset="80">
+  <body data-spy="scroll" data-target="#TableOfContents" data-offset="80">
     <div class="container-fluid bg-dimmed wrapper">
       <!----- ADD NAVBAR --------------->
       {{ block "navbar" . }} {{ end }}

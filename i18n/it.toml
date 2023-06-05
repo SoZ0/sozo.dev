@@ -53,8 +53,8 @@ other = "Precedente"
 [next]
 other = "Successivo"
 
-[share_on]
-other = "Condividi su:"
+# [share_on]
+# other = "Share on"
 
 [improve_this_page]
 other = "Migliora questa pagina"
@@ -86,11 +86,11 @@ other = "Vedi altro"
 [show_less]
 other = "Mostra meno"
 
-[responsibilities]
-other = "Responsabilità:"
+# [responsibilities]
+# other = "Responsibilities:"
 
-[present]
-other = "Ad oggi"
+# [present]
+# other = "Present"
 
 # [comments_javascript]
 # other = "Please enable JavaScript to view the"

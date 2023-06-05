@@ -1,0 +1,16 @@
+name: "Mathias Petersen"
+nickname: "Mathias"
+image: "images/author.png"
+
+# greeting message before your name. it will default to "Hi! I am" if not provided
+greeting: "Hey! I am"
+
+# give your contact information. they will be used in the footer
+contactInfo:
+  email: "mathais@pepservices.com"
+
+# a summary of what you do
+summary:
+- I am a team leader
+- I work with Java
+- I love to work with robots
