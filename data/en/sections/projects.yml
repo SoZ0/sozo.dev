@@ -32,14 +32,14 @@ projects:
 - name: Frc Metis
   role: Owner
   timeline: "December 2022"
-  repo: https://github.com/SoZ0/java-superformula-2d
+  repo: https://github.com/FRC-6390/FRC-Metis
   summary: This public repository contains the autonomous waypoint systems for the team's FRC robot. These systems guide the robot to specific points on the field during the autonomous phase of a match.
   tags: ["frc", "java"]
 
 - name: Discord Bot
   role: Owner
   timeline: "Novemeber 2021"
-  repo: https://github.com/SoZ0/java-superformula-2d
+  repo: https://github.com/SoZ0/discord-bot-gui
   summary: This repository contains a GUI application for managing a Discord bot in real time, possibly providing features like sending messages, managing servers and channels, and monitoring bot status.
   tags: ["hobby", "java", "applets", "swing", "web"]
 
