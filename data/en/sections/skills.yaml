@@ -18,8 +18,14 @@ skills:
   
 - name: JavaScript
   logo: images/sections/skills/javascript-logo.png
-  summary: "Experienced in creating intricate back-end systems for data collection and processing. Proven ability to deploy large-scale, mission-critical applications using JavaScript."
+  summary: "Experienced in creating intricate back-end and front-end systems for data collection and processing. Proven ability to deploy large-scale, mission-critical applications using JavaScript."
   url: "https://www.javascript.com/"
+
+- name: React
+  logo: images/sections/skills/react-logo.png
+  summary: "A proficient ReactJS developer in building dynamic web applications. Expert in core React concepts like JSX, component lifecycle, hooks, and adept at managing complex state with Redux and Context API. Skilled in integrating third-party APIs, handling side effects, and performance optimization."
+  url: "https://react.dev/"
+
 
 - name: C++
   logo: images/sections/skills/cpp-logo.png

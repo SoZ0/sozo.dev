@@ -29,6 +29,41 @@ buttons:
 
 # your projects
 projects:
+- name: FRC 2022 Season
+  role: Owner
+  timeline: "September 2021 - April 2022"
+  repo: https://github.com/FRC-6390/FRC-Season-2022
+  summary: This public repository contains the Java code for team's 2022 robot called "Switchable". It feature a swerve drive, a turret, an elevator, and several other components.
+  tags: ["frc", "java", "robotics","autonomous","competitive","swerve"]
+
+- name: Http Server
+  role: Owner
+  timeline: "Novemeber 2021"
+  repo: https://github.com/SoZ0/java-http-server
+  summary: This repository contains a simple HTTP server written in Java. It doesn't use any external dependencies, thus showcasing the use of Java's networking and IO capabilities for server-side applications.
+  tags: ["hobby", "java", "web", "backend", "standalone"]
+
+- name: Rest API
+  role: Owner
+  timeline: "Novemeber 2021"
+  repo: https://github.com/SoZ0/advance-java-rest-api
+  summary: This repository hosts a simple Java REST API, presumably providing a basic example of setting up an HTTP server and routing requests to different endpoints.
+  tags: ["hobby", "java", "web", "backend", "api"]
+
+- name: FRC Prodromoi
+  role: Team Lead
+  timeline: "September 2019 - Present"
+  repo: https://github.com/FRC-6390/frc-prodromoi
+  summary: An data tracking and computing app for collecting and processing information gathered at FRC Events
+  tags: ["frc", "javascript", "cordova","css","html","firebase","google-cloud","data"]
+
+- name: Database Manager
+  role: Owner
+  timeline: "December 2020"
+  repo: https://github.com/SoZ0/advance-java-database
+  summary: This repository provides a library for interfacing with SQLite databases in Java, demonstrating advanced database interactions.
+  tags: ["hobby", "java", "library", "standalone", "data","SQLite"]
+
 - name: Frc Metis
   role: Owner
   timeline: "December 2022"
@@ -50,19 +85,6 @@ projects:
   summary: A visual representation of the Super Formula
   tags: ["hobby", "java", "applets", "swing", "awt"]
 
-- name: Http Server
-  role: Owner
-  timeline: "Novemeber 2021"
-  repo: https://github.com/SoZ0/java-http-server
-  summary: This repository contains a simple HTTP server written in Java. It doesn't use any external dependencies, thus showcasing the use of Java's networking and IO capabilities for server-side applications.
-  tags: ["hobby", "java", "web", "backend", "standalone"]
-
-- name: Rest API
-  role: Owner
-  timeline: "Novemeber 2021"
-  repo: https://github.com/SoZ0/advance-java-rest-api
-  summary: This repository hosts a simple Java REST API, presumably providing a basic example of setting up an HTTP server and routing requests to different endpoints.
-  tags: ["hobby", "java", "web", "backend", "api"]
 
 - name: Special Relativity Simulator
   role: Owner
@@ -78,19 +100,6 @@ projects:
   summary: This private repository contains the Java-based emailing application for FRC Team 6390. The tool automates email communications for the team, for sponsor outreach
   tags: ["frc", "java", "applets", "javafx","swing","awt"]
 
-- name: FRC Prodromoi
-  role: Team Lead
-  timeline: "September 2019 - Present"
-  repo: https://github.com/FRC-6390/frc-prodromoi
-  summary: An data tracking and computing app for collecting and processing information gathered at FRC Events
-  tags: ["frc", "javascript", "cordova","css","html","firebase","google-cloud","data"]
-
-- name: Database Manager
-  role: Owner
-  timeline: "December 2020"
-  repo: https://github.com/SoZ0/advance-java-database
-  summary: This repository provides a library for interfacing with SQLite databases in Java, demonstrating advanced database interactions.
-  tags: ["hobby", "java", "library", "standalone", "data","SQLite"]
 
 - name: FRC Abeona
   role: Owner
@@ -106,12 +115,6 @@ projects:
   summary: This public repository is dedicated to FRC programming documentation and guide materials. It contains files that provide instructions and examples for programming FRC robots.
   tags: ["frc", "javascript", "web", "markdown","docs","hugo",]
 
-- name: FRC 2022 Season
-  role: Owner
-  timeline: "September 2021 - April 2022"
-  repo: https://github.com/FRC-6390/FRC-Season-2022
-  summary: This public repository contains the Java code for team's 2022 robot called "Switchable". It feature a swerve drive, a turret, an elevator, and several other components.
-  tags: ["frc", "java", "robotics","autonomous","competitive","swerve"]
 
 - name: Swerve 2021
   role: Team Lead
