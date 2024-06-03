@@ -1,7 +1,7 @@
 version: '3.8'
 
 services:
-  robotics-website:
+  sozo-dev-website:
     image: reg.sozo.dev/sozo-dev-website:latest
     ports:
       - "80:3000"
