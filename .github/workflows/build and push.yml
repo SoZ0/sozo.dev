@@ -1,0 +1,29 @@
+name: Build and Push to registry
+
+on: 
+  workflow_dispatch:
+
+jobs:
+
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v4
+    - name: Log in to Docker Registry
+      run: echo "${{ secrets.DOCKER_PASSWORD }}" | docker login ${{ secrets.DOCKER_REGISTRY }} -u "${{ secrets.DOCKER_USERNAME }}" --password-stdin
+
+    - name: Set timestamp
+      id: vars
+      run: echo "TIMESTAMP=$(date +%Y%m%d%H%M%S)" >> $GITHUB_ENV
+    
+    - name: Build the Docker image
+      run: |
+        docker build . --file Dockerfile --tag ${{ secrets.DOCKER_REGISTRY }}/sozo-dev-website:${{ env.TIMESTAMP }}
+        docker tag ${{ secrets.DOCKER_REGISTRY }}/sozo-dev-website:${{ env.TIMESTAMP }} ${{ secrets.DOCKER_REGISTRY }}/sozo-dev-website:latest
+    
+    - name: Push the Docker image
+      run: |
+        docker push ${{ secrets.DOCKER_REGISTRY }}/sozo-dev-website:${{ env.TIMESTAMP }}
+        docker push ${{ secrets.DOCKER_REGISTRY }}/sozo-dev-website:latest
