@@ -66,8 +66,8 @@
 
 <style>
   #background {
-    -webkit-mask-image: url("background design.svg");
-    mask-image: url("background design.svg");
+    -webkit-mask-image: url("/static/background design.svg");
+    mask-image: url("/static/background design.svg");
     mask-repeat:repeat;
   }
 

@@ -1,33 +1,24 @@
-# Stage 1: Build the app
-FROM node:18-alpine AS build-stage
+# Step 1: Build the application
+FROM oven/bun AS builder
 
+# Set the working directory in the container
 WORKDIR /app
 
-# Copy package.json and install dependencies
-COPY package*.json ./
-RUN npm install
-
-# Copy the rest of the app's source code
+# Copy all the application files to the container
 COPY . .
 
-# Build the app
-RUN npm run build
+# Run your build process
+RUN bun i
+RUN bun run build
 
-# Stage 2: Setup the Nginx server
-FROM node:18-alpine AS production-stage
+# Step 2: Create a smaller image for running the application
+FROM oven/bun
 
-RUN mkdir /app
+# Copy only the necessary files from the builder image to the final image
+COPY --from=builder /app/build .
 
-# Copy the build artifacts from the build stage
-COPY --from=build-stage /app/build /app/build
-COPY --from=build-stage /app/package.json /app/
-
-WORKDIR /app
-
-RUN yarn install --production && \
-    yarn cache clean
-# Expose port 80
+# Expose the port the application will run on
 EXPOSE 3000
 
-# Start server
-CMD ["node", "build/index.js"]
+#Start the BUN server
+CMD ["bun", "run", "start"]

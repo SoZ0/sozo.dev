@@ -394,7 +394,7 @@ modalStore.trigger(modal);
 	  </AwardCard>
 	  <AwardCard title="CompTIA Security+" date="July 2024">
 		<svelte:fragment slot="icon">
-      <img src="logos/comptia security+.png" alt="comptia Security+ logo"/>
+      <img src="logos/comptia security.png" alt="comptia Security+ logo"/>
 		</svelte:fragment>
 	
 		

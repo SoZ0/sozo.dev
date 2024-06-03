@@ -2,8 +2,11 @@ version: '3.8'
 
 services:
   sozo-dev-website:
-    image: reg.sozo.dev/sozo-dev-website:latest
+    container_name: website
+    # The name of the image that will be created when building this container
+    image: sozo-dev-website
+    build:
+      context: .
+      dockerfile: Dockerfile
     ports:
-      - "80:3000"
-    environment:
-      - NODE_ENV=production
+      - 8080:3000
