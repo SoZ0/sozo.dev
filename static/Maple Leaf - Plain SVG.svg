@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="376.69247mm"
+   height="376.6925mm"
+   viewBox="0 0 376.69247 376.6925"
+   version="1.1"
+   id="svg1"
+   xml:space="preserve"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg"><defs
+     id="defs1"><linearGradient
+       id="linearGradient9"><stop
+         style="stop-color:#19111d;stop-opacity:1;"
+         offset="0"
+         id="stop9" /><stop
+         style="stop-color:#171519;stop-opacity:1;"
+         offset="1"
+         id="stop10" /></linearGradient><linearGradient
+       id="linearGradient7"><stop
+         style="stop-color:#ff1b1b;stop-opacity:1;"
+         offset="0"
+         id="stop7" /><stop
+         style="stop-color:#0958be;stop-opacity:1;"
+         offset="1"
+         id="stop8" /></linearGradient><linearGradient
+       xlink:href="#linearGradient7"
+       id="linearGradient8"
+       x1="194.85217"
+       y1="218.96043"
+       x2="304.29932"
+       y2="216.52634"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="matrix(1.9241938,0,0,1.9339359,-253.13685,-178.47914)" /><radialGradient
+       xlink:href="#linearGradient9"
+       id="radialGradient10"
+       cx="259.67007"
+       cy="218.96043"
+       fx="259.67007"
+       fy="218.96043"
+       r="64.817879"
+       gradientTransform="matrix(1.9241938,0,0,1.9140213,-253.13685,-174.11861)"
+       gradientUnits="userSpaceOnUse" /></defs><g
+     id="layer1"
+     transform="translate(-56.873826,-51.743695)"><circle
+       style="fill:#11111d;fill-opacity:1;stroke:#4a4a4a;stroke-width:34;stroke-dasharray:none"
+       id="path11"
+       cx="245.22006"
+       cy="240.08994"
+       r="171.34624" /><path
+       style="fill:url(#radialGradient10);stroke:url(#linearGradient8);stroke-width:9.9419;stroke-dasharray:none"
+       d="m 234.93615,364.11196 0.93687,-59.79098 -54.80555,7.06193 6.79214,-18.361 -56.67923,-45.90249 16.16061,-6.59112 -10.77373,-37.19281 32.32121,7.76812 6.08951,-18.8318 32.32122,32.24945 -9.6027,-65.67588 20.37642,12.24067 28.44578,-41.62725 28.44579,41.70345 20.37642,-12.24068 -9.60269,65.67589 32.32121,-32.24944 6.08952,18.8318 32.3212,-7.76812 -10.77373,37.1928 16.16062,6.59112 -56.67924,45.90248 6.79214,18.361 -54.80554,-7.06191 0.93686,59.79097 z"
+       id="path1" /></g></svg>
