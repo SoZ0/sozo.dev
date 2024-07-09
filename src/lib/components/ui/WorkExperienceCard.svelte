@@ -9,7 +9,7 @@
 
 <div class="card variant-ghost-secondary p-4 flex gap-4 hover:p-8 h-fit transition-all group hover:bg-secondary-700">
 
-    <div class="border-secondary-500 border-2 rounded-full flex w-[6em] h-[6em]  items-center justify-center  ">
+    <div class="border-secondary-500 border-2 rounded-full flex md:w-[6em] md:h-[6em] w-[8em] h-[6em] items-center justify-center  ">
          <slot name="icon"/>
     </div>
     <div class="flex flex-col">

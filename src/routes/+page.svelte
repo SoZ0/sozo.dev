@@ -34,13 +34,13 @@
 };
 
 const modalStore = getModalStore();
-modalStore.trigger(modal);
+// modalStore.trigger(modal);
 </script>
 
-<div class="grid grid-cols-3">
+<div class="grid md:grid-cols-3 grid-rows-3 md:grid-rows-1">
   <div class="w-full flex items-center justify-center p-4">
     <div
-      class="card variant-ghost-primary text-center h-5/6 w-3/4 p-4 flex flex-col"
+      class="card variant-ghost-primary text-center h-5/6 w-3/4 p-4 flex flex-col row-start-2"
     >
       <div class="flex-grow">
         <strong class="h4">Most Recent News</strong>
@@ -59,7 +59,7 @@ modalStore.trigger(modal);
       </p>
     </div>
   </div>
-  <center class="py-10">
+  <center class="py-10 row-start-1 md:row-auto">
     <div class="py-5">
       <img class="bg-white rounded-full w-56 h-56" src="./Mathias Petersen - CB - April NA Online 2024_LI.png" alt="Mathias BrianStation"/>
     </div>
@@ -100,8 +100,8 @@ modalStore.trigger(modal);
       Open to Relocation!
     </div>
   </center>
-  <div class="w-full flex items-center justify-center p-4">
-    <div class="card variant-ghost-secondary text-center h-5/6 w-3/4 p-4">
+  <div class="w-full flex items-center justify-center p-4 order-3">
+    <div class="card variant-ghost-secondary text-center md:h-5/6 w-3/4 p-4">
       <strong class="h4">Check Out My Resume</strong>
       <a
         target="_blank"
@@ -111,21 +111,21 @@ modalStore.trigger(modal);
         <img
           src="./BrainStation Resume 2.png"
           alt="resume"
-          class="mt-4 w-1/2 rounded-md"
+          class="mt-4 md:w-1/2 rounded-md"
         />
       </a>
     </div>
   </div>
 </div>
 
-<div id="about-me" class="mb-32" />
+<div id="about-me" class="md:mb-32" />
 <div class="mt-4">
   <strong class="h2 ml-4"> About me </strong>
   <hr class="!border-t-2 pb-4" />
-  <div class="ml-4">
-    <div class="grid grid-cols-2 gap-8">
-      <div class="flex justify-end">
-        <div class="card flex items-center p-8 w-2/3">
+  <div class="md:ml-4 m-2">
+    <div class="flex flex-col-reverse md:flex-none  md:grid md:grid-cols-2 gap-8 grid-rows-2 md:grid-rows-1">
+      <div class="flex justify-end md:row-start-auto h-fit">
+        <div class="card flex items-center md:p-8 md:w-2/3 p-4">
           Hi, I'm Mathias Petersen, an accomplished team lead and robotics
           software engineer with a passion for mechatronics and cutting-edge
           technology. I thrive in dynamic environments where innovation and
@@ -140,26 +140,28 @@ modalStore.trigger(modal);
         </div>
       </div>
 
-      <div class="flex items-center justify-start gap-8">
-        <img class="bg-white rounded-full w-56 h-56" src="./Mathias Petersen - CB - April NA Online 2024_LI.png" alt="Mathias BrianStation"/>
-        <Logo width="15sm" height="15em" />
-        <img  class="bg-white rounded-full w-56 h-56" src="./FIRES.webp" alt="spongebob blowing out fires">
+      <div class="flex items-center justify-start gap-8 md:h-auto h-fit">
+        <img class="bg-white rounded-full md:w-56 md:h-56 h-24 w-24" src="./Mathias Petersen - CB - April NA Online 2024_LI.png" alt="Mathias BrianStation"/>
+        <div>
+          <Logo width="15em" height="" />
+        </div>
+        <img  class="bg-white rounded-full md:w-56 md:h-56 h-24 w-24" src="./FIRES.webp" alt="spongebob blowing out fires">
       </div>
     </div>
   </div>
 </div>
 
-<div id="active-projects" class="mb-32" />
+<div id="active-projects" class="md:mb-32" />
 <div class="mt-4 flex flex-col">
   <strong class="h2 ml-4"> Active Projects </strong>
   <p class="ml-4">
     Here are some projects im currently working on at the moment
   </p>
   <hr class="!border-t-2 pb-4" />
-  <div class="ml-4 flex justify-center gap-4 flex-wrap">
+  <div class="md:ml-4 flex justify-center gap-4 flex-wrap">
     <ProjectCard title="Naimon">
       <svelte:fragment slot="icon">
-        <Ai width="5em" height="5em" style="fill-white" />
+        <Ai width="5em" height="5em" style="fill-white md:h-auto h-10" />
       </svelte:fragment>
       Multi LLM powered multi modal assitant framework
       <svelte:fragment slot="chips">
@@ -185,7 +187,7 @@ modalStore.trigger(modal);
 
     <ProjectCard title="Sozo.dev">
       <svelte:fragment slot="icon">
-        <Globe width="5em" height="5em" style="fill-white" />
+        <Globe width="5em" height="5em" style="fill-white md:h-auto h-10" />
       </svelte:fragment>
       This website!
       <svelte:fragment slot="chips">
@@ -201,7 +203,7 @@ modalStore.trigger(modal);
 
     <ProjectCard title="Constellation">
       <svelte:fragment slot="icon">
-        <Server width="5em" height="5em" style="fill-white" />
+        <Server width="5em" height="5em" style="fill-white md:h-auto h-10" />
       </svelte:fragment>
       My server rack and its architecture
       <svelte:fragment slot="chips">
@@ -217,7 +219,7 @@ modalStore.trigger(modal);
 
     <ProjectCard title="Helios">
       <svelte:fragment slot="icon">
-        <Server width="5em" height="5em" style="fill-white" />
+        <Server width="5em" height="5em" style="fill-white md:h-auto h-10" />
       </svelte:fragment>
       Feducial marker detection system & hardware
       <svelte:fragment slot="chips">
@@ -241,17 +243,17 @@ modalStore.trigger(modal);
   </div>
 </div>
 
-<div id="experience" class="mb-32" />
+<div id="experience" class="md:mb-32" />
 <div class="mt-4">
   <strong class="h2 ml-4"> Experience </strong>
   <hr class="!border-t-2 pb-4" />
-  <div class="ml-4">
+  <div class="md:ml-4 w-screen overflow-scroll">
     <div class="flex w-full justify-center">
       <div class="grid grid-cols-3 items-center justify-center w-full">
         <WorkYear year="Present">
           <WorkExperienceCard title="Founder" place="Prometheus Dynamics">
             <svelte:fragment slot="icon">
-              <PrometheusDynamics height="75px" />
+              <PrometheusDynamics height="5em" />
             </svelte:fragment>
           </WorkExperienceCard>
           <WorkExperienceCard
@@ -266,7 +268,7 @@ modalStore.trigger(modal);
         <WorkYear year="2024">
           <WorkExperienceCard title="Founder" place="Prometheus Dynamics">
             <svelte:fragment slot="icon">
-              <PrometheusDynamics height="75px" />
+              <PrometheusDynamics height="5em" />
             </svelte:fragment>
           </WorkExperienceCard>
           <WorkExperienceCard
@@ -289,7 +291,7 @@ modalStore.trigger(modal);
         <WorkYear year="2023">
           <WorkExperienceCard title="Founder" place="Prometheus Dynamics">
             <svelte:fragment slot="icon">
-              <PrometheusDynamics height="75px" />
+              <PrometheusDynamics height="5em" />
             </svelte:fragment>
           </WorkExperienceCard>
           <WorkExperienceCard title="Team Captian" place="Hepheastus Robotics">
@@ -379,11 +381,11 @@ modalStore.trigger(modal);
   </div>
 </div>
 
-<div id="awards-&-certifications" class="mb-32" />
+<div id="awards-&-certifications" class="md:mb-32" />
 <div class="mt-4">
   <strong class="h2 ml-4"> Awards & Certifications </strong>
   <hr class="!border-t-2 pb-4" />
-  <div class="ml-4 flex justify-center gap-4 flex-wrap">
+  <div class="md:ml-4 flex justify-center gap-4 flex-col md:flex-wrap md:flex-row p-2 md:p-0">
 
 	<AwardCard title="Cybersecurity Diploma" date="May 2024 - July 2024">
 		<svelte:fragment slot="icon">
@@ -413,12 +415,12 @@ modalStore.trigger(modal);
   </div>
 </div>
 
-<div id="all-projects-&-skills" class="mb-32" />
+<div id="all-projects-&-skills" class="md:mb-32" />
 <div class="mt-4">
   <strong class="h2 ml-4"> All Projects & Skills </strong>
   <hr class="!border-t-2 pb-4" />
-  <div class="ml-4 w-full flex justify-center">
-    <center class="w-1/3 h-[50em]">
+  <div class="md:ml-4 w-full flex justify-center p-2 md:p-0">
+    <center class="md:w-1/3 h-[50em]">
       AHHH!!! Im still working on this!
       <img src="./FIRES.webp" alt="spongebob blowing out fires"/>
       <!-- <CybersecurityTabGroup /> -->

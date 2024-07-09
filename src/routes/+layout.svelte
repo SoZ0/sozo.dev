@@ -5,6 +5,7 @@
   import Github from "$lib/components/icons/Github.svelte";
   import Mail from "$lib/components/icons/Mail.svelte";
   import Linkedin from "$lib/components/icons/Linkedin.svelte";
+  import Bars from "$lib/components/icons/Bars.svelte";
 
 
   import { initializeStores, Modal } from '@skeletonlabs/skeleton';
@@ -22,38 +23,50 @@
           <strong class="ml-4"> Mathias Petersen </strong>
         </svelte:fragment>
         <svelte:fragment slot="trail">
-          <a target="_blank" href="https://www.github.com/SoZ0">
-            <Github style="fill-white hover:fill-primary-500 transition-all" />
-          </a>
-          <a href="mailto:mathias@pepservices.com">
-            <Mail style="fill-white hover:fill-tertiary-500 transition-all"/>
-          </a>
-          <a target="_blank" href="https://www.linkedin.com/in/mathiasdp/">
-            <Linkedin style="fill-white hover:fill-secondary-500 transition-all"/>
-          </a>
+          <div class="flex flex-row-reverse">
+            <div class="flex flex-row-reverse invisible md:h-0 md:w-0">
+              <Bars/>
+            </div>
+            <div class="flex gap-4 md:visible invisible">
+              <a target="_blank" href="https://www.github.com/SoZ0">
+                <Github style="fill-white hover:fill-primary-500 transition-all" />
+              </a>
+              <a href="mailto:mathias@pepservices.com">
+                <Mail style="fill-white hover:fill-tertiary-500 transition-all"/>
+              </a>
+              <a target="_blank" href="https://www.linkedin.com/in/mathiasdp/">
+                <Linkedin style="fill-white hover:fill-secondary-500 transition-all"/>
+              </a>
+            </div>
+          </div>
+         
+         
        
         </svelte:fragment>
-        <span class=" divider-vertical h-auto" />
-        <a href="./#about-me" class="hover:font-bold transition-all">
-            About Me
-        </a>
-        <span class="divider-vertical h-auto" />
-        <a href="./#active-projects" class="hover:font-bold transition-all">
-            Active Projects
-        </a>
-        <span class="divider-vertical h-auto" />
-        <a href="./#experience" class="hover:font-bold transition-all">
-            Experience
-        </a>
-        <span class="divider-vertical h-auto" />
-        <a href="./#awards-&-certifications" class="hover:font-bold transition-all">
-            Awards & Certifications
-        </a>
-        <span class="divider-vertical h-auto" />
-        <a href="./#all-projects-&-skills" class="hover:font-bold transition-all">
-            All Projects & Skills
-        </a>
-        <span class="divider-vertical h-auto" />
+        <div class="md:h-auto md:w-auto h-0 w-0 md:visible invisible">
+          <span class=" divider-vertical h-auto" />
+          <a href="./#about-me" class="hover:font-bold transition-all">
+              About Me
+          </a>
+          <span class="divider-vertical h-auto" />
+          <a href="./#active-projects" class="hover:font-bold transition-all">
+              Active Projects
+          </a>
+          <span class="divider-vertical h-auto" />
+          <a href="./#experience" class="hover:font-bold transition-all">
+              Experience
+          </a>
+          <span class="divider-vertical h-auto" />
+          <a href="./#awards-&-certifications" class="hover:font-bold transition-all">
+              Awards & Certifications
+          </a>
+          <span class="divider-vertical h-auto" />
+          <a href="./#all-projects-&-skills" class="hover:font-bold transition-all">
+              All Projects & Skills
+          </a>
+          <span class="divider-vertical h-auto" />
+        </div>
+        
       </AppBar>
       
 </nav>
@@ -66,8 +79,8 @@
 
 <style>
   #background {
-    -webkit-mask-image: url("/static/background design.svg");
-    mask-image: url("/static/background design.svg");
+    -webkit-mask-image: url("/background design.svg");
+    mask-image: url("/background design.svg");
     mask-repeat:repeat;
   }
 
