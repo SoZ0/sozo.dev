@@ -60,7 +60,7 @@ modalStore.trigger(modal);
       </p>
     </div>
   </div>
-  <center class="py-10 row-start-1 md:row-auto order-first">
+  <center class="py-10 row-start-1 md:row-auto order-first md:order-2">
     <div class="py-5">
       <img class="bg-white rounded-full w-56 h-56" src="./Mathias Petersen - CB - April NA Online 2024_LI.png" alt="Mathias BrianStation"/>
     </div>
