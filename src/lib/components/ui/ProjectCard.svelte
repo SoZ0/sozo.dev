@@ -7,7 +7,7 @@
 
 <div class="card variant-ghost-primary md:w-1/3 w-full min-h-[10em] flex flex-row px-4 pt-4 gap-4 relative">
     <div class="absolute right-0 pr-4">
-        <ArrowUpFrightFromSquare height="1.5em" width="1.5em"/>
+        <!-- <ArrowUpFrightFromSquare height="1.5em" width="1.5em"/> -->
     </div>
     <div class="h-full md:flex-none md:items-start flex items-center">
         <div class="bg-primary-500 md:w-[8em] md:h-[8em] w-20 h-fit p-4 md:p-0 items-center justify-center flex rounded-md">

@@ -34,7 +34,7 @@
 };
 
 const modalStore = getModalStore();
-// modalStore.trigger(modal);
+modalStore.trigger(modal);
 </script>
 
 <div class="grid md:grid-cols-3 grid-rows-3 md:grid-rows-1">
@@ -45,9 +45,10 @@ const modalStore = getModalStore();
       <div class="flex-grow">
         <strong class="h4">Most Recent News</strong>
         <div class="flex flex-col gap-4 p-4 text-start">
-          <p>Currently Studing CyberSecurity @ BrainStation</p>
-          <p>Started a new AI driven project called Naimon</p>
-          <p>Recently converted local server infastructure to RKE2</p>
+          <p>Recently Graduated from BrainStation Cybereecurity program! </p>
+          <p>Building a secure Rust API to power my future projects</p>
+          <p>Working on a AI driven project called Naimon (More details soon)</p>
+          <p>Recently converted local server infastructure to RKE2, currently focusing on security and monitoring. Implemented grafana and soon Loki, preparing services for SSO</p>
           <p>
             Recently aquired a Dell R730, currently configuring the server for
             deployment
@@ -55,7 +56,7 @@ const modalStore = getModalStore();
         </div>
       </div>
       <p class="text-sm text-gray-400">
-        <i> Last Updated June 1, 2024 </i>
+        <i> Last Updated July 9, 2024 </i>
       </p>
     </div>
   </div>
@@ -166,21 +167,28 @@ const modalStore = getModalStore();
       Multi LLM powered multi modal assitant framework
       <svelte:fragment slot="chips">
         <span class="chip variant-ghost-secondary h-fit gap-2">
-          <ArrowUpFrightFromSquare width="1em" height="1em" /> Software Engineering</span
+          <!-- <ArrowUpFrightFromSquare width="1em" height="1em" />  -->
+          Software Engineering</span
         >
 
         <span class="chip variant-ghost-secondary h-fit gap-2">
-          <ArrowUpFrightFromSquare width="1em" height="1em" /> Rust</span
+          <!-- <ArrowUpFrightFromSquare width="1em" height="1em" />  -->
+          Rust</span
         >
 
         <span class="chip variant-ghost-secondary h-fit gap-2">
-          <ArrowUpFrightFromSquare width="1em" height="1em" />LLMS</span
+          <!-- <ArrowUpFrightFromSquare width="1em" height="1em" /> -->
+          LLM</span
         >
         <span class="chip variant-ghost-secondary h-fit gap-2">
-          <ArrowUpFrightFromSquare width="1em" height="1em" /> AI</span
+          <!-- <ArrowUpFrightFromSquare width="1em" height="1em" />  -->
+            
+          AI</span
         >
         <span class="chip variant-ghost-secondary h-fit gap-2">
-          <ArrowUpFrightFromSquare width="1em" height="1em" /> Svelte JS</span
+          <!-- <ArrowUpFrightFromSquare width="1em" height="1em" />  -->
+           
+          Svelte JS</span
         >
       </svelte:fragment>
     </ProjectCard>
@@ -192,11 +200,13 @@ const modalStore = getModalStore();
       This website!
       <svelte:fragment slot="chips">
         <span class="chip variant-ghost-secondary h-fit gap-2">
-          <ArrowUpFrightFromSquare width="1em" height="1em" /> Web Development</span
+          <!-- <ArrowUpFrightFromSquare width="1em" height="1em" />  -->
+          Web Development</span
         >
 
         <span class="chip variant-ghost-secondary h-fit gap-2">
-          <ArrowUpFrightFromSquare width="1em" height="1em" /> Svelte JS</span
+          <!-- <ArrowUpFrightFromSquare width="1em" height="1em" />  -->
+          Svelte JS</span
         >
       </svelte:fragment>
     </ProjectCard>
@@ -208,11 +218,13 @@ const modalStore = getModalStore();
       My server rack and its architecture
       <svelte:fragment slot="chips">
         <span class="chip variant-ghost-secondary h-fit gap-2">
-          <ArrowUpFrightFromSquare width="1em" height="1em" /> Cybersecurity</span
+          <!-- <ArrowUpFrightFromSquare width="1em" height="1em" />  -->
+          Cybersecurity</span
         >
 
         <span class="chip variant-ghost-secondary h-fit gap-2">
-          <ArrowUpFrightFromSquare width="1em" height="1em" /> Servers</span
+          <!-- <ArrowUpFrightFromSquare width="1em" height="1em" />  -->
+          Servers</span
         >
       </svelte:fragment>
     </ProjectCard>
@@ -224,19 +236,23 @@ const modalStore = getModalStore();
       Feducial marker detection system & hardware
       <svelte:fragment slot="chips">
         <span class="chip variant-ghost-secondary h-fit gap-2">
-          <ArrowUpFrightFromSquare width="1em" height="1em" /> Software Engineering</span
+          <!-- <ArrowUpFrightFromSquare width="1em" height="1em" />  -->
+          Software Engineering</span
         >
 
         <span class="chip variant-ghost-secondary h-fit gap-2">
-          <ArrowUpFrightFromSquare width="1em" height="1em" /> Hardware</span
+          <!-- <ArrowUpFrightFromSquare width="1em" height="1em" />  -->
+          Hardware</span
         >
 
         <span class="chip variant-ghost-secondary h-fit gap-2">
-          <ArrowUpFrightFromSquare width="1em" height="1em" /> Rust</span
+          <!-- <ArrowUpFrightFromSquare width="1em" height="1em" />  -->
+          Rust</span
         >
 
         <span class="chip variant-ghost-secondary h-fit gap-2">
-          <ArrowUpFrightFromSquare width="1em" height="1em" /> OpenCV</span
+          <!-- <ArrowUpFrightFromSquare width="1em" height="1em" />  -->
+          OpenCV</span
         >
       </svelte:fragment>
     </ProjectCard>
