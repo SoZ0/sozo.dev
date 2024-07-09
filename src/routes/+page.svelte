@@ -37,10 +37,10 @@ const modalStore = getModalStore();
 modalStore.trigger(modal);
 </script>
 
-<div class="grid md:grid-cols-3 grid-rows-3 md:grid-rows-1">
+<div class="flex flex-col md:grid md:grid-cols-3 md:grid-rows-1">
   <div class="w-full flex items-center justify-center p-4">
     <div
-      class="card variant-ghost-primary text-center h-5/6 w-3/4 p-4 flex flex-col row-start-2"
+      class="card variant-ghost-primary text-center h-5/6 w-3/4 p-4 flex flex-col"
     >
       <div class="flex-grow">
         <strong class="h4">Most Recent News</strong>
@@ -60,7 +60,7 @@ modalStore.trigger(modal);
       </p>
     </div>
   </div>
-  <center class="py-10 row-start-1 md:row-auto">
+  <center class="py-10 row-start-1 md:row-auto order-first">
     <div class="py-5">
       <img class="bg-white rounded-full w-56 h-56" src="./Mathias Petersen - CB - April NA Online 2024_LI.png" alt="Mathias BrianStation"/>
     </div>
