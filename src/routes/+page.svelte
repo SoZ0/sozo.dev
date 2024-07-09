@@ -40,12 +40,12 @@ modalStore.trigger(modal);
 <div class="flex flex-col md:grid md:grid-cols-3 md:grid-rows-1">
   <div class="w-full flex items-center justify-center p-4">
     <div
-      class="card variant-ghost-primary text-center h-5/6 w-3/4 p-4 flex flex-col"
+      class="card variant-ghost-primary text-center h-5/6 w-3/4 p-4 flex flex-col overflow-y-scroll"
     >
       <div class="flex-grow">
         <strong class="h4">Most Recent News</strong>
         <div class="flex flex-col gap-4 p-4 text-start">
-          <p>Recently Graduated from BrainStation Cybereecurity program! </p>
+          <p>Recently Graduated from BrainStation Cybersecurity program! </p>
           <p>Building a secure Rust API to power my future projects</p>
           <p>Working on a AI driven project called Naimon (More details soon)</p>
           <p>Recently converted local server infastructure to RKE2, currently focusing on security and monitoring. Implemented grafana and soon Loki, preparing services for SSO</p>
