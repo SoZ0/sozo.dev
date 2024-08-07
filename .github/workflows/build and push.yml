@@ -20,10 +20,10 @@ jobs:
     
     - name: Build the Docker image
       run: |
-        docker build . --file Dockerfile --tag ${{ secrets.DOCKER_REGISTRY }}/sozo-dev-website:${{ env.TIMESTAMP }}
-        docker tag ${{ secrets.DOCKER_REGISTRY }}/sozo-dev-website:${{ env.TIMESTAMP }} ${{ secrets.DOCKER_REGISTRY }}/sozo-dev-website:latest
+        docker build . --file Dockerfile --tag ${{ secrets.DOCKER_REGISTRY }}/sozo-dev-website:2.0-${{ env.TIMESTAMP }}
+        docker tag ${{ secrets.DOCKER_REGISTRY }}/sozo-dev-website:2.0-${{ env.TIMESTAMP }} ${{ secrets.DOCKER_REGISTRY }}/sozo-dev-website:2.0-latest
     
     - name: Push the Docker image
       run: |
-        docker push ${{ secrets.DOCKER_REGISTRY }}/sozo-dev-website:${{ env.TIMESTAMP }}
-        docker push ${{ secrets.DOCKER_REGISTRY }}/sozo-dev-website:latest
+        docker push ${{ secrets.DOCKER_REGISTRY }}/sozo-dev-website:2.0-${{ env.TIMESTAMP }}
+        docker push ${{ secrets.DOCKER_REGISTRY }}/sozo-dev-website:2.0-latest

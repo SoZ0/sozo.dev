@@ -2,6 +2,33 @@
 @tailwind components;
 @tailwind utilities;
 
+html {
+    scroll-behavior: smooth;
+}
 
-/* Default setting: */
-body { @apply bg-surface-50-900-token; }
+* {
+    font-family: 'Roboto', sans-serif;
+}
+
+h1, h2 , h3, .poppins {
+    font-family: 'Poppins', sans-serif;
+}
+
+.gradient-text-br {
+    @apply bg-clip-text text-transparent box-decoration-clone;
+	/* Direction */
+	@apply bg-gradient-to-br;
+	/* Color Stops */
+	@apply from-red-500 via-purple-500 to-blue-500;
+    @apply from-20% to-80%;
+}
+
+.gradient-text-r {
+    @apply bg-clip-text text-transparent box-decoration-clone;
+	/* Direction */
+	@apply bg-gradient-to-r;
+	/* Color Stops */
+	@apply from-red-500 via-purple-500 to-blue-500;
+    @apply from-20% to-80%;
+}
+

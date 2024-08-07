@@ -1,87 +1,28 @@
-<script lang="ts">
+<script>
   import "../app.css";
-  import Logo from "$lib/components/icons/Logo.svelte";
-  import { AppBar, getModalStore, type ModalSettings } from "@skeletonlabs/skeleton";
-  import Github from "$lib/components/icons/Github.svelte";
-  import Mail from "$lib/components/icons/Mail.svelte";
-  import Linkedin from "$lib/components/icons/Linkedin.svelte";
-  import Bars from "$lib/components/icons/Bars.svelte";
+  import Footer from "../components/Footer.svelte";
+  import Header from "../components/Header.svelte";
 
+  let y;
+  let innerHeight = 0;
+  let innerWidth = 0;
 
-  import { initializeStores, Modal } from '@skeletonlabs/skeleton';
-
-  initializeStores();
-
-
+  function goTop() {
+    document.body.scrollIntoView();
+  }
 </script>
 
-<Modal />
-<nav id="navbar" class="sticky top-0 z-50 transition-all ease-in-out duration-200" >
-    <AppBar slotDefault="place-self-center">
-        <svelte:fragment slot="lead">
-          <Logo width="3em" height="3em" />
-          <strong class="ml-4"> Mathias Petersen </strong>
-        </svelte:fragment>
-        <svelte:fragment slot="trail">
-          <div class="flex flex-row-reverse">
-            <div class="flex flex-row-reverse invisible md:h-0 md:w-0">
-              <Bars/>
-            </div>
-            <div class="flex gap-4 md:visible invisible">
-              <a target="_blank" href="https://www.github.com/SoZ0">
-                <Github style="fill-white hover:fill-primary-500 transition-all" />
-              </a>
-              <a href="mailto:mathias@pepservices.com">
-                <Mail style="fill-white hover:fill-tertiary-500 transition-all"/>
-              </a>
-              <a target="_blank" href="https://www.linkedin.com/in/mathiasdp/">
-                <Linkedin style="fill-white hover:fill-secondary-500 transition-all"/>
-              </a>
-            </div>
-          </div>
-         
-         
-       
-        </svelte:fragment>
-        <div class="md:h-auto md:w-auto h-0 w-0 md:visible invisible">
-          <span class=" divider-vertical h-auto" />
-          <a href="./#about-me" class="hover:font-bold transition-all">
-              About Me
-          </a>
-          <span class="divider-vertical h-auto" />
-          <a href="./#active-projects" class="hover:font-bold transition-all">
-              Active Projects
-          </a>
-          <span class="divider-vertical h-auto" />
-          <a href="./#experience" class="hover:font-bold transition-all">
-              Experience
-          </a>
-          <span class="divider-vertical h-auto" />
-          <a href="./#awards-&-certifications" class="hover:font-bold transition-all">
-              Awards & Certifications
-          </a>
-          <span class="divider-vertical h-auto" />
-          <a href="./#all-projects-&-skills" class="hover:font-bold transition-all">
-              All Projects & Skills
-          </a>
-          <span class="divider-vertical h-auto" />
-        </div>
-        
-      </AppBar>
-      
-</nav>
-<div id="background" class="fixed inset-0 z-[-1] bg-surface-500/20">
-
+<div
+  class="relative flex flex-col max-w-[1400px] mx-auto w-full text-sm sm:text-base min-h-screen"
+>
+  <div class={"fixed bottom-0 w-full duration-200 flex p-10 z-[10] " + (y>0 ? 'opacity-100 pointer-events-auto' : 'pointer-events-none opacity-0')}>
+    <button on:click={goTop} class="ml-auto rounded-full bg-slate-900 text-blue-400 px-3 sm:px-4 aspect-square hover:bg-slate-800 cursor-pointer">
+      <i class="fa-solid fa-arrow-up grid place-items-center aspect-square" />
+    </button>
+  </div>
+  <Header y={y}/>
+  <slot />
+  <Footer />
 </div>
 
-<slot />
-
-
-<style>
-  #background {
-    -webkit-mask-image: url("/background design.svg");
-    mask-image: url("/background design.svg");
-    mask-repeat:repeat;
-  }
-
-</style>
+<svelte:window bind:scrollY={y} bind:innerHeight bind:innerWidth />
